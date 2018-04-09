@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/plugins/font-awesome/css/font-awesome.min.css">
+    {#    <link rel="stylesheet" href="/static/css/app01base.css">#}
+    {% block script %}
+    {% endblock %}
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="logo">
+            纳维世纪
+        </div>
+        <div class="top-menu visible-desktop topstyle">
+            <ul class="pull-left">
+                <li><a id="messages" data-notification="2" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Messages</a></li>
+                <li><a id="notifications" data-notification="3" href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Notifications</a></li>
+            </ul>
+            <ul class="pull-right">
+                <li><a href="login.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="sidebar-nav">
+    <div class="user_side">
+        <img class="user_avatar" src="/static/imgs/avatar/001.jpg" alt="Odinn god of Thunder">
+        <h5>Admin</h5>
+        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+    </div>
+    <div class="accordion">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle b_C3F7A7 collapsed" data-toggle="collapse" data-parent="#accordion2" href="{% url 'index' %}"><i class="fa fa-line-chart" aria-hidden="true"></i> <span>Charts</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block content %}
+
+{% endblock %}
+
+
+{% block js %}
+{% endblock %}
+</body>
+
+</html>
