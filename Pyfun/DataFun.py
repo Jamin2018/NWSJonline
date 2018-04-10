@@ -272,7 +272,7 @@ def get_average_price_quantity_purchased(sku_info_dict,sku_name,subplots=True):
     # Series --> DataFrame
     average_price,day_number = average_price.to_frame(name=u'每日平均价'),day_number.to_frame(name=u'每日订单量')
     data = pd.concat([average_price,day_number], axis=1)
-    drawing(data, title=u'%s系列每日均价——订单量对比图' % sku_name,subplots=subplots, ylabel=u'订单量(个)')
+    drawing(data, title=u'%s系列每日均价-订单量对比图' % sku_name,subplots=subplots, ylabel=u'订单量(个)')
 
 
 def get_profit_day(sku_info_dict,sku_name,subplots=True):
@@ -290,7 +290,7 @@ def get_profit_day(sku_info_dict,sku_name,subplots=True):
     # Series --> DataFrame
     average_price,profit_day = average_price.to_frame(name=u'每日均价'),profit_day.to_frame(name=u'每日利润')
     data = pd.concat([average_price,profit_day], axis=1)
-    drawing(data, title=u'%s系列每日均价——利润对比图' % sku_name, subplots=subplots,ylabel = u'美元')
+    drawing(data, title=u'%s系列每日均价-利润对比图' % sku_name, subplots=subplots,ylabel = u'美元')
 
 
 def get_order_refund(df_order,df_refund,sku_name):
@@ -349,6 +349,10 @@ def drawing(df, kind = 'line', title=u'数据分析', color = None, figsize = (6
     #     plt.savefig('%s.jpg' % title)
     # elif type(df) == type(pd.DataFrame()):
     #     plt.savefig('%s.jpg' % title)
+
+    path = os.getcwd()
+    filepath = path + r'/static/imgs/datas/'
+    plt.savefig(filepath+'%s.jpg' % title)
     plt.show()
 
 
@@ -384,6 +388,9 @@ def draw_bar(df, section = 5, kind = 'line', title=u'数据分析', color = None
     #     plt.savefig('%s.jpg' % title)
     # elif type(df) == type(pd.DataFrame()):
     #     plt.savefig('%s.jpg' % title)
+    path = os.getcwd()
+    filepath = path + r'/static/imgs/datas/'
+    plt.savefig(filepath+'%s.jpg' % title)
     plt.show()
 
 
@@ -403,8 +410,10 @@ def seaborn_draw(df):
 
 
 if __name__ == '__main__':
+    path = os.getcwd()
     filename = '0211-0225bak.csv'
-    df = get_csv(filename)
+    filepath = 'C:\Users\Administrator\PycharmProjects\NWSJonline/static/datas/0211-0225bak.csv'
+    df = get_csv(filepath)
     sku_name_list = get_sku_name_list(df, reverse=True)
     # csv_day_order = get_day_order(csv)
     order_sku_info_dict = get_sku_info_dict(df, 'Order', sku_name_list)  # 获得订单的总数据

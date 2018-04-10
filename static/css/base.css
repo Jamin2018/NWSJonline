@@ -108,9 +108,9 @@ min-width: 800px;
 
 .panelstyle{
     float: left;
-    width: 32.8%;
+    width: 24.5%;
     display: inline-block;
-    height: 150px;
+    height: 200px;
     margin-right: 0.5%;
 }
 
@@ -137,7 +137,30 @@ min-width: 800px;
 
 .panel-msg{
     display: none;
-    color: red;
     font-weight: bold;
     text-align: center;
+}
+
+.panel-inner{
+    text-align: center;
+    line-height: 75px;
+}
+.btn-xs-mb{
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.btn-xs-margin{
+    margin-left: 10px;
+}
+
+.sku-list{
+    overflow-y:scroll ;
+    height: 130px;
+}
+
+.color_red{
+    color: red;
+}
+.fa-refresh{
+    cursor: pointer;
 }
