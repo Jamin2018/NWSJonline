@@ -2,120 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c579409d-6ec6-4540-82e7-67720137286b" name="默认" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Datas/urls.py" afterPath="$PROJECT_DIR$/Datas/urls.py" />
-      <change beforePath="$PROJECT_DIR$/Datas/views.py" afterPath="$PROJECT_DIR$/Datas/views.py" />
-      <change beforePath="$PROJECT_DIR$/Pyfun/DataFun.py" afterPath="$PROJECT_DIR$/Pyfun/DataFun.py" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/analytics.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/alertify.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/colorpicker.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/datepicker.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/facybox.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/fullcalendar.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/fullcalendar.print.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/select2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/css/timepicker.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/font/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/font/fontawesome-webfont.eot@" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/font/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/font/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/ico/favicon.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/alpha.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/01.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/02.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/03.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/04.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/05.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/06.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/07.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/08.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/09.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/10.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/11.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/12.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/avatars/13.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/dotted.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/10.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/11.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/12.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/13.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/14.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/15.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/8.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/gallery/9.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/glyphicons-halflings-white.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/glyphicons-halflings.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/hue.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/odinn.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/saturation.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/select2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/select2x2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/sort_asc.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/sort_asc_disabled.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/sort_both.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/sort_desc.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/sort_desc_disabled.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/img/spinner.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/bootstrap-colorpicker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/bootstrap-datepicker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/bootstrap-timepicker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/fullcalendar.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery-ui.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.alertify.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.dataTables.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.elfinder.min.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.facybox.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.gritter.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.imagesloaded.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.knob.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.masonry.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/jquery.slimscroll.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/morris.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/raphael-min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/realm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/select2.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/assets/js/sparkline.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/buttons.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/calendar.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/forms.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/gallery.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/index-2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/login.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/new_account.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/notifications.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/tables.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/tasks.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/tickets.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/ui_features.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/users.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/找网站模板就上【模板之家】cssMoban.com.url" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/mstp_48_realm/说明.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.css" afterPath="$PROJECT_DIR$/static/css/base.css" />
-      <change beforePath="$PROJECT_DIR$/static/datas/order.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/datas/refund.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/imgs/datas/001.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/imgs/datas/002.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/imgs/datas/003.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/imgs/datas/004.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/imgs/datas/005.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change beforePath="$PROJECT_DIR$/static/datas/datas.pkl" afterPath="$PROJECT_DIR$/static/datas/datas.pkl" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/datas/YSW5402系列每日均价-利润对比图.jpg" afterPath="$PROJECT_DIR$/static/imgs/datas/YSW5402系列每日均价-利润对比图.jpg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -133,7 +22,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6579491">
+    <splitter split-orientation="horizontal" split-proportion="0.69299823">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
@@ -151,9 +40,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="483">
                   <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="68" />
-                  <folding>
-                    <element signature="e#644#676#0" expanded="true" />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -161,8 +48,8 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Datas/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1323">
-                  <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+                <state relative-caret-position="439">
+                  <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
                   <folding>
                     <element signature="e#25#34#0" expanded="true" />
                   </folding>
@@ -183,8 +70,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/templates/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="188" column="43" lean-forward="false" selection-start-line="188" selection-start-column="43" selection-end-line="188" selection-end-column="43" />
+                <state relative-caret-position="-861">
+                  <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
@@ -207,21 +94,9 @@
           <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/css/base.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="732">
-                  <caret line="164" column="20" lean-forward="false" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
+                <state relative-caret-position="719">
+                  <caret line="141" column="1" lean-forward="false" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/NWSJonline/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#644#685#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -276,8 +151,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1817" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -320,13 +195,6 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="imgs" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="imgs" type="462c0819:PsiDirectoryNode" />
-              <item name="datas" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -341,7 +209,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python2.7Anaconda" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -364,7 +232,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.views">
+  <component name="RunManager" selected="Django server.NWSJonline">
     <configuration name="datas_index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NWSJonline/templates/datas_index.html" />
     <configuration name="DataFun" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -479,21 +347,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22269353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2195122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24258475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18385416" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18385416" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -532,7 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="125" column="1" lean-forward="true" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -660,16 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NWSJonline/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#644#685#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/YSW5402订单-退款关系图.jpg" />
     <entry file="file://$PROJECT_DIR$/SKU系列区间订单情况.jpg" />
     <entry file="file://$PROJECT_DIR$/YSW5402系列每日均价——利润对比图.jpg" />
@@ -682,23 +539,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pyfun/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="164" column="20" lean-forward="false" selection-start-line="164" selection-start-column="20" selection-end-line="164" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/imgs/datas/YSW5402系列每日均价——利润对比图.jpg" />
+    <entry file="file://$PROJECT_DIR$/static/imgs/datas/YSW5402系列每日均价-利润对比图.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -711,15 +557,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pyfun/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NWSJonline/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#644#676#0" expanded="true" />
+            <element signature="e#644#685#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/imgs/datas/YSW5402系列每日均价-利润对比图.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="141" column="1" lean-forward="false" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pyfun/DataFun.py">
@@ -732,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Datas/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1323">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="439">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding>
             <element signature="e#25#34#0" expanded="true" />
           </folding>
@@ -742,8 +607,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="188" column="43" lean-forward="false" selection-start-line="188" selection-start-column="43" selection-end-line="188" selection-end-column="43" />
+        <state relative-caret-position="-861">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding />
         </state>
       </provider>
