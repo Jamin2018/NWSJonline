@@ -2,107 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c579409d-6ec6-4540-82e7-67720137286b" name="默认" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Pyfun/PyDataFun.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/js/myjs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/_charts_content_nav.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/chart.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Pyfun/PyPlotly.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Pyfun/test/plotly_bar.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Pyfun/test/plotly_line.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/data/data.pkl" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/data/0211-0225bak.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/data/product_cost_weight-sample.xlsx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/img/chart_table/YSW1623系列每日均价-利润对比图.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/templates/chart_table.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Datas/urls.py" afterPath="$PROJECT_DIR$/Datas/urls.py" />
       <change beforePath="$PROJECT_DIR$/Datas/views.py" afterPath="$PROJECT_DIR$/Datas/views.py" />
+      <change beforePath="$PROJECT_DIR$/NWSJonline/settings.py" afterPath="$PROJECT_DIR$/NWSJonline/settings.py" />
+      <change beforePath="$PROJECT_DIR$/Pyfun/DataFun.py" afterPath="$PROJECT_DIR$/Pyfun/test/DataFun.py" />
+      <change beforePath="$PROJECT_DIR$/Pyfun/PyDataFun.py" afterPath="$PROJECT_DIR$/Pyfun/PyDataFun.py" />
+      <change beforePath="$PROJECT_DIR$/Pyfun/test.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/static/css/base.css" afterPath="$PROJECT_DIR$/static/css/base.css" />
-      <change beforePath="$PROJECT_DIR$/static/datas/0211-0225bak.csv" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/datas/datas.pkl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/imgs/datas/YSW5402系列每日均价-利润对比图.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/imgs/datas/YSW5402系列每日均价-订单量对比图.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/imgs/datas/YSW5402订单-退款关系图.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/imgs/datas/每日订单数量走势图.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/.github/CODE_OF_CONDUCT.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/.github/CONTRIBUTING.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/.github/ISSUE_TEMPLATE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/.github/PULL_REQUEST_TEMPLATE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/CHANGE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/LICENSE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/bower.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/composer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/css/fileinput-rtl.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/css/fileinput-rtl.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/css/fileinput.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/css/fileinput.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/examples/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/img/loading-sm.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/img/loading.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/fileinput.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/fileinput.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/LANG.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/ar.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/az.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/bg.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/ca.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/cr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/cs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/da.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/de.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/el.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/es.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/et.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/fa.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/fi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/fr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/gl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/hu.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/id.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/it.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/ja.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/ka.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/kr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/kz.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/lt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/nl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/no.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/pl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/pt-BR.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/pt.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/ro.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/ru.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/sk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/sl.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/sv.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/th.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/tr.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/uk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/vi.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/zh-TW.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/locales/zh.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/plugins/piexif.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/plugins/piexif.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/plugins/purify.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/plugins/purify.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/plugins/sortable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/js/plugins/sortable.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/nuget/Package.nuspec" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/nuget/build.bat" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/scss/fileinput-rtl.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/scss/fileinput.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/scss/themes/explorer-fa/theme.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/scss/themes/explorer/theme.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/explorer-fa/theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/explorer-fa/theme.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/explorer-fa/theme.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/explorer-fa/theme.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/explorer/theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/explorer/theme.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/explorer/theme.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/explorer/theme.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/fa/theme.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/fa/theme.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/fas/theme.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/fas/theme.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/gly/theme.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-fileinput-master/themes/gly/theme.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/static/datas/0211-0225.csv" afterPath="$PROJECT_DIR$/static/data/0211-0225.csv" />
+      <change beforePath="$PROJECT_DIR$/static/datas/0211-0225bak.csv" afterPath="$PROJECT_DIR$/Pyfun/test/0211-0225bak.csv" />
+      <change beforePath="$PROJECT_DIR$/static/datas/datas.pkl" afterPath="$PROJECT_DIR$/Pyfun/test/datas.pkl" />
+      <change beforePath="$PROJECT_DIR$/static/datas/product_cost_weight-sample.xlsx" afterPath="$PROJECT_DIR$/media/data/product_cost_weight-sample.xlsx" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/avatar/001.jpg" afterPath="$PROJECT_DIR$/static/img/avatar/001.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/backdrop/dotted.png" afterPath="$PROJECT_DIR$/static/img/backdrop/dotted.png" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/chart/YSW1623系列每日均价-利润对比图.jpg" afterPath="$PROJECT_DIR$/static/img/chart/YSW1623系列每日均价-利润对比图.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/chart/YSW1623订单-退款关系图.jpg" afterPath="$PROJECT_DIR$/static/img/chart/YSW1623订单-退款关系图.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/chart/YSW5402系列每日均价-利润对比图.jpg" afterPath="$PROJECT_DIR$/static/img/chart/YSW5402系列每日均价-利润对比图.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/chart/YSW5402订单-退款关系图.jpg" afterPath="$PROJECT_DIR$/static/img/chart/YSW5402订单-退款关系图.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/datas/SKU系列区间订单情况.jpg" afterPath="$PROJECT_DIR$/static/img/data/SKU系列区间订单情况.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/datas/每日利润.jpg" afterPath="$PROJECT_DIR$/static/img/data/每日利润.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/imgs/datas/每日订单数.jpg" afterPath="$PROJECT_DIR$/static/img/data/每日订单数.jpg" />
+      <change beforePath="$PROJECT_DIR$/static/js/myjs.js" afterPath="$PROJECT_DIR$/static/js/myjs.js" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor-all-min.js" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor-all-min.js" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor-all.js" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor-all.js" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor-min.js" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor-min.js" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor.js" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/kindeditor.js" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/emoticons.js" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/emoticons/emoticons.js" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/filemanager/filemanager.js" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/filemanager/filemanager.js" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/image/image.js" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/image/image.js" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/multiimage/multiimage.js" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/multiimage/multiimage.js" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/quickformat/quickformat.js" afterPath="$PROJECT_DIR$/static/plugins/kindeditor/plugins/quickformat/quickformat.js" />
+      <change beforePath="$PROJECT_DIR$/templates/_charts_content_nav.html" afterPath="$PROJECT_DIR$/templates/_charts_content_nav.html" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change beforePath="$PROJECT_DIR$/templates/chart.html" afterPath="$PROJECT_DIR$/templates/chart.html" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,22 +54,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/NWSJonline$PyDataFun.coverage" NAME="PyDataFun Coverage Results" MODIFIED="1523506411649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pyfun" />
     <SUITE FILE_PATH="coverage/NWSJonline$DataFun.coverage" NAME="DataFun Coverage Results" MODIFIED="1523246263186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pyfun" />
-    <SUITE FILE_PATH="coverage/NWSJonline$test.coverage" NAME="test Coverage Results" MODIFIED="1523269417188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pyfun" />
+    <SUITE FILE_PATH="coverage/NWSJonline$PyPlotly.coverage" NAME="PyPlotly Coverage Results" MODIFIED="1523530636531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pyfun" />
+    <SUITE FILE_PATH="coverage/NWSJonline$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1523534938233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/static/data" />
+    <SUITE FILE_PATH="coverage/NWSJonline$test.coverage" NAME="test Coverage Results" MODIFIED="1523512270939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pyfun" />
     <SUITE FILE_PATH="coverage/NWSJonline$views.coverage" NAME="views Coverage Results" MODIFIED="1523183579703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Datas" />
+    <SUITE FILE_PATH="coverage/NWSJonline$plotly_bar.coverage" NAME="plotly_bar Coverage Results" MODIFIED="1523533647647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pyfun/test" />
+    <SUITE FILE_PATH="coverage/NWSJonline$plotpy_test.coverage" NAME="plotpy_test Coverage Results" MODIFIED="1523515658392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pyfun" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5377475">
+    <splitter split-orientation="horizontal" split-proportion="0.3913329">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Datas/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3108">
-                  <caret line="155" column="29" lean-forward="false" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
+                <state relative-caret-position="378">
+                  <caret line="114" column="14" lean-forward="false" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#25#34#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/NWSJonline/settings.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-297">
+                  <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/templates/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -137,18 +105,28 @@
           <file leaf-file-name="chart.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/templates/chart.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                <state relative-caret-position="252">
+                  <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="17" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/base.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="273">
-                  <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+                <state relative-caret-position="567">
+                  <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="_charts_content_nav.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/templates/_charts_content_nav.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="651">
+                  <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -157,19 +135,21 @@
           <file leaf-file-name="PyDataFun.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Pyfun/PyDataFun.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="852">
-                  <caret line="158" column="122" lean-forward="false" selection-start-line="158" selection-start-column="122" selection-end-line="158" selection-end-column="122" />
+                <state relative-caret-position="45">
+                  <caret line="86" column="66" lean-forward="false" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <file leaf-file-name="PyPlotly.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Pyfun/PyPlotly.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="562">
-                  <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="1334">
+                  <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#24#33#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -178,46 +158,28 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="base.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/static/css/base.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="538">
-                  <caret line="140" column="21" lean-forward="false" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/NWSJonline/settings.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2100">
-                  <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="myjs.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="myjs.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/static/js/myjs.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+                <state relative-caret-position="42">
+                  <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
                   <folding>
-                    <marker date="1523445833659" expanded="true" signature="4341:4350" ph="..." />
-                    <marker date="1523445833659" expanded="true" signature="4948:4958" ph="..." />
-                    <marker date="1523445833659" expanded="true" signature="5361:5371" ph="..." />
-                    <marker date="1523445833659" expanded="true" signature="5494:5504" ph="..." />
+                    <marker date="1523537556917" expanded="true" signature="455:461" ph=" " />
+                    <marker date="1523537556917" expanded="true" signature="461:467" ph=" " />
+                    <marker date="1523537556917" expanded="true" signature="3537:3546" ph="..." />
+                    <marker date="1523537556917" expanded="true" signature="4144:4154" ph="..." />
+                    <marker date="1523537556917" expanded="true" signature="4557:4567" ph="..." />
+                    <marker date="1523537556917" expanded="true" signature="4690:4700" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="DataFun.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Pyfun/DataFun.py">
+          <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/static/css/base.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="7245">
-                  <caret line="350" column="33" lean-forward="false" selection-start-line="350" selection-start-column="33" selection-end-line="350" selection-end-column="33" />
+                <state relative-caret-position="3360">
+                  <caret line="160" column="1" lean-forward="false" selection-start-line="160" selection-start-column="1" selection-end-line="160" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -232,9 +194,9 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="HTML4 File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -244,6 +206,9 @@
       <find>file</find>
       <find>datainput2</find>
       <find>collapse1</find>
+      <find>YSW5402.html</find>
+      <find>draw_day_order_refund</find>
+      <find>df_day_order_refund</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -255,22 +220,29 @@
         <option value="$PROJECT_DIR$/templates/1.js" />
         <option value="$PROJECT_DIR$/templates/1.css" />
         <option value="$PROJECT_DIR$/templates/11.html" />
-        <option value="$PROJECT_DIR$/NWSJonline/settings.py" />
         <option value="$PROJECT_DIR$/templates/datas_index.html" />
         <option value="$PROJECT_DIR$/mstp_48_realm/index.html" />
         <option value="$PROJECT_DIR$/NWSJonline/urls.py" />
-        <option value="$PROJECT_DIR$/Pyfun/test.py" />
         <option value="$PROJECT_DIR$/Pyfun/DataFun.py" />
         <option value="$PROJECT_DIR$/templates/charts.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/Datas/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/123.html" />
+        <option value="$PROJECT_DIR$/templates/chart_table.html" />
+        <option value="$PROJECT_DIR$/Pyfun/test.py" />
+        <option value="$PROJECT_DIR$/Pyfun/plotpy_test.py" />
+        <option value="$PROJECT_DIR$/static/css/base.css" />
         <option value="$PROJECT_DIR$/templates/_charts_content_nav.html" />
         <option value="$PROJECT_DIR$/templates/chart.html" />
-        <option value="$PROJECT_DIR$/static/css/base.css" />
-        <option value="$PROJECT_DIR$/static/js/myjs.js" />
-        <option value="$PROJECT_DIR$/Datas/views.py" />
+        <option value="$PROJECT_DIR$/Pyfun/test/plot_bar.py" />
+        <option value="$PROJECT_DIR$/Pyfun/test/plotly_bar.py" />
         <option value="$PROJECT_DIR$/Pyfun/PyDataFun.py" />
+        <option value="$PROJECT_DIR$/static/data/test.py" />
+        <option value="$PROJECT_DIR$/Pyfun/PyPlotly.py" />
+        <option value="$PROJECT_DIR$/Datas/views.py" />
+        <option value="$PROJECT_DIR$/NWSJonline/settings.py" />
+        <option value="$PROJECT_DIR$/static/js/myjs.js" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -280,8 +252,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="width" value="1817" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="960" />
+    <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -301,11 +274,27 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
+              <item name="Datas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
               <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -322,25 +311,36 @@
               <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
               <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="imgs" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
               <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="imgs" type="462c0819:PsiDirectoryNode" />
-              <item name="datas" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
               <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NWSJonline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NWSJonline" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="index_chart_html" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,22 +349,22 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python2.7Anaconda" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\static\imgs\chart" />
-      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\static\plugins\bootstrap-submenu\css" />
-      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\static\plugins\bootstrap-submenu\js" />
-      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\static\assets\js" />
+      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\Pyfun\test" />
+      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\templates\chart_html" />
       <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\templates" />
+      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\Pyfun" />
+      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\static\assets" />
+      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\Datas\templates" />
       <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\templates" />
-      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\static\datas" />
+      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\media\chart_html" />
+      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\media\data" />
       <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\Pyfun" />
-      <recent name="C:\Users\Administrator\PycharmProjects\NWSJonline\static\imgs\datas" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -379,9 +379,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.NWSJonline">
-    <configuration name="datas_index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NWSJonline/templates/datas_index.html" />
-    <configuration name="DataFun" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test (1)">
+    <configuration name="PyPlotly" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -394,13 +393,32 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NWSJonline" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pyfun/DataFun.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pyfun/PyPlotly.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="plotly_bar" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Administrator\venv_Anaconda\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Pyfun/test" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NWSJonline" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pyfun/test/plotly_bar.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="plotpy_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -413,7 +431,26 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="NWSJonline" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pyfun/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Pyfun/plotpy_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Administrator\venv_Anaconda\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/static/data" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NWSJonline" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/static/data/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -461,19 +498,21 @@
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Django server.NWSJonline" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.datas_index.html" />
-      <item index="2" class="java.lang.String" itemvalue="Python.views" />
-      <item index="3" class="java.lang.String" itemvalue="Python.DataFun" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.plotpy_test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.PyPlotly" />
+      <item index="3" class="java.lang.String" itemvalue="Python.views" />
+      <item index="4" class="java.lang.String" itemvalue="Python.plotly_bar" />
+      <item index="5" class="java.lang.String" itemvalue="Python.test (1)" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.test" />
-        <item index="1" class="java.lang.String" itemvalue="Python.DataFun" />
-        <item index="2" class="java.lang.String" itemvalue="Python.views" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.datas_index.html" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.test (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.plotly_bar" />
+        <item index="2" class="java.lang.String" itemvalue="Python.PyPlotly" />
+        <item index="3" class="java.lang.String" itemvalue="Python.views" />
+        <item index="4" class="java.lang.String" itemvalue="Python.plotpy_test" />
       </list>
     </recent_temporary>
   </component>
@@ -494,21 +533,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3319194" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.3319194" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="-46" y="152" width="1066" height="507" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14427084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0140625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993644" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34252387" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -527,83 +566,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/datas/001.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/datas/QQ图片20180329153708.png" />
-    <entry file="file://$PROJECT_DIR$/static/datas/0211-0225.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mstp_48_realm/assets/css/theme.css" />
-    <entry file="file://$PROJECT_DIR$/static/imgs/datas/005.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/imgs/datas/004.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/imgs/datas/003.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/plugins/jq/jquery-1.12.4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/datas/order.pkl" />
-    <entry file="file://$PROJECT_DIR$/static/datas/refund.pkl" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/web-forms.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="494" column="22" lean-forward="false" selection-start-line="494" selection-start-column="22" selection-end-line="494" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/YSW5402订单-退款关系图.jpg" />
-    <entry file="file://$PROJECT_DIR$/SKU系列区间订单情况.jpg" />
-    <entry file="file://$PROJECT_DIR$/YSW5402系列每日均价——利润对比图.jpg" />
-    <entry file="file://$PROJECT_DIR$/YSW5402系列每日均价——订单量对比图.jpg" />
-    <entry file="file://$PROJECT_DIR$/每日订单数量走势图.jpg" />
-    <entry file="file://$USER_HOME$/Desktop/04_dynamic_html_server-class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3142">
-          <caret line="185" column="38" lean-forward="true" selection-start-line="185" selection-start-column="38" selection-end-line="185" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/imgs/datas/YSW5402系列每日均价——利润对比图.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/imgs/chart/YSW5402系列每日均价-利润对比图.jpg" />
-    <entry file="file://$PROJECT_DIR$/NWSJonline/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pyfun/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="14911" column="12" lean-forward="false" selection-start-line="14911" selection-start-column="12" selection-end-line="14911" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NWSJonline/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/charts.java" />
     <entry file="file://$USER_HOME$/Desktop/mstp_48_realm/mstp_48_realm/assets/js/sparkline.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -629,7 +596,7 @@
     <entry file="file://$PROJECT_DIR$/static/assets/js/fullcalendar.min.js" />
     <entry file="file://$PROJECT_DIR$/每日订单数.jpg" />
     <entry file="file://$PROJECT_DIR$/每日利润.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/imgs/datas/SKU系列区间订单情况.jpg">
+    <entry file="file://$PROJECT_DIR$/static/img/data/SKU系列区间订单情况.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -641,32 +608,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Pyfun/DataFun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7245">
-          <caret line="350" column="33" lean-forward="false" selection-start-line="350" selection-start-column="33" selection-end-line="350" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index-2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
           <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="87" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Datas/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/_charts_content_nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="78" column="44" lean-forward="false" selection-start-line="78" selection-start-column="44" selection-end-line="78" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -675,74 +620,212 @@
     <entry file="file://$PROJECT_DIR$/static/imgs/chart/YSW1610系列每日均价——利润对比图.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imgs/chart/YSW1630系列每日均价——利润对比图.jpg" />
     <entry file="file://$PROJECT_DIR$/static/imgs/chart/YSW7603系列每日均价——利润对比图.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/imgs/chart/YSW5402订单-退款关系图.jpg">
+    <entry file="file://$PROJECT_DIR$/static/img/chart/YSW5402订单-退款关系图.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/imgs/chart/YSW5402系列每日均价——利润对比图.jpg" />
-    <entry file="file://$PROJECT_DIR$/static/imgs/chart/YSW1623订单-退款关系图.jpg">
+    <entry file="file://$PROJECT_DIR$/static/img/chart/YSW1623订单-退款关系图.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/Pyfun/test/0211-0225bak.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Pyfun/test/test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/123.html" />
+    <entry file="file://$PROJECT_DIR$/templates/temp-plot.html" />
+    <entry file="file://$PROJECT_DIR$/Pyfun/test/datas.pkl">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pyfun/test/DataFun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="350" column="33" lean-forward="false" selection-start-line="350" selection-start-column="33" selection-end-line="350" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pyfun/temp-plot.html" />
+    <entry file="file://$PROJECT_DIR$/Pyfun/111.html" />
+    <entry file="file://$PROJECT_DIR$/templates/chart_table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pyfun/test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Datas/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="71" lean-forward="false" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/data/data.pkl">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/chart_html/order_refund_YSW5402.html" />
+    <entry file="file://$PROJECT_DIR$/templates/order_refund_YSW5402.html" />
+    <entry file="file://$PROJECT_DIR$/media/chart_html/order_refund_YSK37509.html" />
+    <entry file="file://$PROJECT_DIR$/Datas/templates/order_refund_YSK37509.html" />
     <entry file="file://$PROJECT_DIR$/static/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="140" column="21" lean-forward="false" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+        <state relative-caret-position="3360">
+          <caret line="160" column="1" lean-forward="false" selection-start-line="160" selection-start-column="1" selection-end-line="160" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/myjs.js">
+    <entry file="file://$PROJECT_DIR$/Pyfun/test/plot_bar.py" />
+    <entry file="file://$USER_HOME$/venv_Anaconda/Lib/site-packages/plotly/tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        <state relative-caret-position="190">
+          <caret line="260" column="14" lean-forward="false" selection-start-line="260" selection-start-column="14" selection-end-line="260" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/data/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/data/每日利润.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pyfun/test/plotly_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pyfun/test/plotly_bar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
           <folding>
-            <marker date="1523445833659" expanded="true" signature="4341:4350" ph="..." />
-            <marker date="1523445833659" expanded="true" signature="4948:4958" ph="..." />
-            <marker date="1523445833659" expanded="true" signature="5361:5371" ph="..." />
-            <marker date="1523445833659" expanded="true" signature="5494:5504" ph="..." />
+            <element signature="e#25#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/chart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/static/img/data/每日订单数.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Datas/views.py">
+    <entry file="file://$PROJECT_DIR$/Pyfun/PyPlotly.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3108">
-          <caret line="155" column="29" lean-forward="false" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="1334">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Pyfun/PyDataFun.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="158" column="122" lean-forward="false" selection-start-line="158" selection-start-column="122" selection-end-line="158" selection-end-column="122" />
+        <state relative-caret-position="45">
+          <caret line="86" column="66" lean-forward="false" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="567">
+          <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/_charts_content_nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/chart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NWSJonline/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="69" column="6" lean-forward="false" selection-start-line="69" selection-start-column="6" selection-end-line="69" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Datas/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="114" column="14" lean-forward="false" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/myjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <marker date="1523537556917" expanded="true" signature="455:461" ph=" " />
+            <marker date="1523537556917" expanded="true" signature="461:467" ph=" " />
+            <marker date="1523537556917" expanded="true" signature="3537:3546" ph="..." />
+            <marker date="1523537556917" expanded="true" signature="4144:4154" ph="..." />
+            <marker date="1523537556917" expanded="true" signature="4557:4567" ph="..." />
+            <marker date="1523537556917" expanded="true" signature="4690:4700" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding />
         </state>
       </provider>

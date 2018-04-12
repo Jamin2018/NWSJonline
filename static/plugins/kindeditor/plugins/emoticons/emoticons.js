@@ -28,7 +28,7 @@ KindEditor.plugin('emoticons', function(K) {
 		var previewDiv, previewImg;
 		if (allowPreview) {
 			previewDiv = K('<div class="ke-preview"></div>').css('right', 0);
-			previewImg = K('<imgs class="ke-preview-imgs" src="' + path + startNum + '.gif" />');
+			previewImg = K('<img class="ke-preview-img" src="' + path + startNum + '.gif" />');
 			wrapperDiv.append(previewDiv);
 			previewDiv.append(previewImg);
 		}
@@ -54,7 +54,7 @@ KindEditor.plugin('emoticons', function(K) {
 				K(this).removeClass('ke-on');
 			});
 			cell.click(function(e) {
-				self.insertHtml('<imgs src="' + path + num + '.gif" border="0" alt="" />').hideMenu().focus();
+				self.insertHtml('<img src="' + path + num + '.gif" border="0" alt="" />').hideMenu().focus();
 				e.stop();
 			});
 		}
@@ -81,7 +81,7 @@ KindEditor.plugin('emoticons', function(K) {
 					var cell = K(row.insertCell(j));
 					cell.addClass('ke-cell');
 					bindCellEvent(cell, j, num);
-					var span = K('<span class="ke-imgs"></span>')
+					var span = K('<span class="ke-img"></span>')
 						.css('background-position', '-' + (24 * num) + 'px 0px')
 						.css('background-image', 'url(' + path + 'static.gif)');
 					cell.append(span);

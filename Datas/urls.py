@@ -14,8 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from Datas.views import DataIndexView,DataInputView,DataAutoDrawView,SkuNameListUpdateView,ImgsNameListView
-from Datas.views import ChooseSkuDrawView,SkuChartView
+from Datas.views import DataIndexView, DataInputView, DataAutoDrawView, SkuNameListUpdateView, ImgsNameListView
+from Datas.views import ChooseSkuDrawView, SkuChartView, SkuChartTableView
 
 
 urlpatterns = [
@@ -23,7 +23,8 @@ urlpatterns = [
     url(r'^data-input/$', DataInputView, name='data-input'),
     url(r'^data-auto-draw/$', DataAutoDrawView, name='data-auto-draw'),
     url(r'^sku-list-update/$', SkuNameListUpdateView, name='sku-list-update'),
-    url(r'^imgs-name-list/$', ImgsNameListView, name='imgs-name-list'),
+    url(r'^img-name-list/$', ImgsNameListView, name='img-name-list'),
     url(r'^choose-sku-draw/$', ChooseSkuDrawView, name='choose-sku-draw'),
     url(r'^sku-chart/$', SkuChartView, name='sku-chart'),
+    url(r'^sku-chart_table/$', SkuChartTableView, name='sku-chart-table'),
 ]

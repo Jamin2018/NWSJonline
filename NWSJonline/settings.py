@@ -55,7 +55,8 @@ ROOT_URLCONF = 'NWSJonline.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates') , os.path.join(BASE_DIR, 'templates/line_chart_html')
+                ,os.path.join(BASE_DIR, 'templates/index_chart_html')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {

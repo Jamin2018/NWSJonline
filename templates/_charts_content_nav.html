@@ -1,80 +1,79 @@
 <div class="content-nav">
-            <div class="panel panel-default panel-danger panelstyle">
-                <div class="panel-heading">①数据解析</div>
-                <div class="panel-body">
-                    <div class="datas-file">
-                        <form id="dataform" name="dataform" method="post" action="{% url 'data-input' %}" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            <div class="row file-up-inner">
-                                <div class="col-xs-6" style="text-align: right">
-                                    <input type="file" name="datacsv" id="datacsv" style="display:none" onChange="document.dataform.dataname1.value=this.value">
-                                    <input name="dataname1" readonly>
-                                </div>
-                                <div class="col-xs-6">
-                                    <input type="button" value="上传csv数据"  onclick="document.dataform.datacsv.click()">
-                                </div>
+    <div class="row">
+        <div class="col-md-3"><div class="panel panel-default panel-danger panelstyle">
+            <div class="panel-heading">①数据解析</div>
+            <div class="panel-body">
+                <div class="datas-file">
+                    <form id="dataform" name="dataform" method="post" action="{% url 'data-input' %}" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="row file-up-inner">
+                            <div class="col-xs-6" style="text-align: right">
+                                <input type="file" name="datacsv" id="datacsv" style="display:none" onChange="document.dataform.dataname1.value=this.value">
+                                <input name="dataname1" readonly>
                             </div>
-                            <div class="row file-up-inner">
-                                <div class="col-xs-6" style="text-align: right">
-                                    <input type="file" name="dataxlsx" id="dataxlsx" style="display:none" onChange="document.dataform.dataname2.value=this.value">
-                                    <input id="f_upload" name="dataname2" readonly>
-                                </div>
-                                <div class="col-xs-6">
-                                    <input type="button" value="上传运费数据"  onclick="document.dataform.dataxlsx.click()">
-                                </div>
-                            </div>
-                            <br>
-                            <div class="row file-up-inner">
-                                <div class="col-xs-6" style="line-height: 34px;text-align: right">
-                                    <span id="panel1"  class="panel-msg">解析中，请稍等</span>
-                                </div>
-                                <div class="col-xs-6">
-                                    <button  id="datainput" type="button" class="btn btn-danger">提交</button>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default panel-success panelstyle">
-                <div class="panel-heading">②一键构图</div>
-                <div class="panel-body">
-                    <div class="datas-file panel-inner2">
-                        <div class="row">
-                            <input id="datainput2" class="btn btn-success" type="button" value="一键构图">
-                            <div class="panel2">
-                                <span id="panel2"></span>
+                            <div class="col-xs-6">
+                                <input type="button" value="上传csv数据"  onclick="document.dataform.datacsv.click()">
                             </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default panel-warning panelstyle">
-                <div class="panel-heading">③系列一览 <i id="panel-btn-3" class="fa fa-refresh fa-1x "></i></div>
-                <div class="panel-body">
-                    <div class="datas-file">
-                        <div class="sku-list" id="sku_list">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default panel-info panelstyle">
-                <div class="panel-heading">④选择系列</div>
-                <div class="panel-body">
-                    <div class="datas-file">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="sku_id" id="sku_id"  placeholder="请输入你想查询的系列号,如 : YSW5402,YSW1623"
-                                       value="">
+                        <div class="row file-up-inner">
+                            <div class="col-xs-6" style="text-align: right">
+                                <input type="file" name="dataxlsx" id="dataxlsx" style="display:none" onChange="document.dataform.dataname2.value=this.value">
+                                <input id="f_upload" name="dataname2" readonly>
                             </div>
-                            <button type="button"  id="sku_id_btn" class="btn btn-info">构图</button>
-                            <span id="panel_span_4"></span>
-                        </form>
+                            <div class="col-xs-6">
+                                <input type="button" value="上传运费数据"  onclick="document.dataform.dataxlsx.click()">
+                            </div>
+                        </div>
+                        <div class="row file-up-inner">
+                            <div class="col-xs-6" style="line-height: 34px;text-align: right">
+                                <span id="panel1"  class="panel-msg">解析中，请稍等</span>
+                            </div>
+                            <div class="col-xs-6">
+                                <button  id="datainput" type="button" class="btn btn-danger">提交</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div></div>
+        <div class="col-md-3"><div class="panel panel-default panel-success panelstyle">
+            <div class="panel-heading">②一键构图</div>
+            <div class="panel-body">
+                <div class="row datas-file panel-inner2">
+                    <input id="datainput2" class="btn btn-success" type="button" value="一键构图">
+                    <div class="panel2">
+                        <span id="panel2"></span>
                     </div>
                 </div>
             </div>
-            <div style="clear: both;"></div>
-        </div>
+        </div></div>
+        <div class="col-md-3"><div class="panel panel-default panel-warning panelstyle">
+            <div class="panel-heading">③系列一览 <i id="panel-btn-3" class="fa fa-refresh fa-1x "></i></div>
+            <div class="panel-body">
+                <div class="datas-file">
+                    <div class="sku-list" id="sku_list">
+
+                    </div>
+                </div>
+            </div>
+        </div></div>
+        <div class="col-md-3"><div class="panel panel-default panel-info panelstyle">
+            <div class="panel-heading">④选择系列</div>
+            <div class="panel-body">
+                <div class="datas-file">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="sku_id" id="sku_id"  placeholder="请输入你想查询的系列号,如 : YSW5402,YSW1623"
+                                   value="">
+                        </div>
+                        <button type="button"  id="sku_id_btn" class="btn btn-info">构图</button>
+                        <span id="panel_span_4"></span>
+                    </form>
+                </div>
+            </div>
+        </div></div>
+        <div style="clear: both;"></div>
+    </div>
+
+</div>

@@ -1,24 +1,7 @@
 
 
 $(function(){
-    var test = window.location.pathname;
-    if(test == '/'){
-        $.get("/imgs-name-list/", function(res){
-            if(res['err'] === 0){
-                var img_list = res['img_name_list'];
-                var htm = "";
-                for(var i=0;i<img_list.length;i++){
-                    var temp_str = "<img class='img-responsive img-thumbnail img_32' alt='Responsive image' src='/static/imgs/datas/"+img_list[i]+"'>";
-                    htm += temp_str
-                }
-                $('#content-inner').html(htm)
-            }
-        });
-
-        $('#panel-btn-3').trigger('click');
-    }else{
-        $('#panel-btn-3').trigger('click');
-    }
+    $('#panel-btn-3').trigger('click');
 });
 
 
@@ -31,7 +14,7 @@ $('#datainput').click(function () {
     var fd = new FormData();
     fd.append('file_csv',file_csv);
     fd.append('file_xlsx',file_xlsx);
-    $('#panel1').html("<i class='fa fa-spinner fa-pulse'></i> 解析中，请稍等");
+    $('#panel1').html("解析中，请稍等&nbsp;&nbsp;<i class='fa fa-spinner fa-pulse'></i>");
     $.ajax({
         url:"/data-input/",
         type:'POST',
@@ -42,7 +25,7 @@ $('#datainput').click(function () {
         success:function (arg) {
             var err = arg['err'];
             if(err == 0){
-                $('#panel1').text(arg['msg']);
+                $('#panel1').html("<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>");
                 $('#panel1').show()
             }else if(err == -1){
                 $('#panel1').text(arg['msg']);
@@ -58,19 +41,12 @@ $('#datainput2').click(function () {
     $('#panel2').html("<i class='fa fa-spinner fa-pulse'></i>");
     $.get("/data-auto-draw/", function(res){
         if(res['err'] === 0){
-            var img_list = res['img_name_list'];
-            var htm = "";
-            for(var i=0;i<img_list.length;i++){
-                var temp_str = "<img class='img-responsive img-thumbnail' alt='Responsive image' src='/static/imgs/datas/"+img_list[i]+"'>";
-                htm += temp_str
-            }
-
+            console.log(res['msg']);
             var test = window.location.pathname;
             if(test == '/'){
                 window.location.reload();
-                $('#content-inner').html(htm)
             }
-            $('#panel2').hide()
+            $('#panel2').html("<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>");
         }
     })
 });

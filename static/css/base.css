@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("/static/imgs/backdrop/dotted.png");
+    /*background-image: url("/static/img/backdrop/dotted.png");*/
 }
 
 .navbar-inner{
@@ -108,10 +108,9 @@ min-width: 800px;
 
 
 .panelstyle{
-    float: left;
-    width: 24.5%;
     display: inline-block;
-    height: 200px;
+    width: 100%;
+    height: 175px;
     margin-right: 0.5%;
 }
 
@@ -120,6 +119,7 @@ min-width: 800px;
 
 .content-inner{
 min-width: 800px;
+    border: 1px solid #ddd;
 
 }
 
@@ -147,6 +147,7 @@ min-width: 800px;
     margin-top: 10px;
 }
 .btn-xs-mb{
+    width: 72px;
     margin-bottom: 5px;
     margin-right: 5px;
 }
@@ -156,7 +157,7 @@ min-width: 800px;
 
 .sku-list{
     overflow-y:scroll ;
-    height: 130px;
+    height: 105px;
 }
 
 .color_red{
@@ -168,6 +169,7 @@ min-width: 800px;
 
 .file-up-inner{
     min-width: 320px;
+    margin-bottom: 10px;
 }
 .panel-body{
     overflow: hidden;

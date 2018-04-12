@@ -31,7 +31,7 @@
 </div>
 <div class="sidebar-nav">
     <div class="user_side">
-        <img class="user_avatar" src="/static/imgs/avatar/001.jpg" alt="Odinn god of Thunder">
+        <img class="user_avatar" src="/static/img/avatar/001.jpg" alt="Odinn god of Thunder">
         <h5>Admin</h5>
         <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
     </div>
@@ -44,7 +44,7 @@
                 <div class="accordion-inner">
                     <a class="accordion-toggle" href="{% url 'index' %}"><i class="icon-star"></i> All Charts</a>
                     <a class="accordion-toggle" href="{% url 'sku-chart' %}"><i class="icon-list-alt"></i> Chart</a>
-                    <a class="accordion-toggle" href="#"><i class="icon-table"></i> Data Tables</a>
+                    <a class="accordion-toggle" href="{% url 'sku-chart-table' %}"><i class="icon-table"></i> Chart Table</a>
                     <a class="accordion-toggle" href="#"><i class="icon-circle"></i> Data Model</a>
                 </div>
             </div>

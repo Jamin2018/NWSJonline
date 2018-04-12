@@ -13,7 +13,7 @@
             <div class="row">
                 {% for chart_name in chart_name_list %}
                     <div class="col-md-6" style="margin-bottom: 20px">
-                        <img class='img-responsive img-thumbnail ' alt='Responsive image' src='/static/imgs/chart/{{ chart_name }}'>
+                        {% include chart_name %}
                     </div>
                 {% endfor %}
 
