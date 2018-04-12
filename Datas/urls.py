@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from Datas.views import DataIndexView,DataInputView,DataAutoDrawView,SkuNameListUpdateView,ImgsNameListView
+from Datas.views import ChooseSkuDrawView,SkuChartView
 
 
 urlpatterns = [
@@ -23,4 +24,6 @@ urlpatterns = [
     url(r'^data-auto-draw/$', DataAutoDrawView, name='data-auto-draw'),
     url(r'^sku-list-update/$', SkuNameListUpdateView, name='sku-list-update'),
     url(r'^imgs-name-list/$', ImgsNameListView, name='imgs-name-list'),
+    url(r'^choose-sku-draw/$', ChooseSkuDrawView, name='choose-sku-draw'),
+    url(r'^sku-chart/$', SkuChartView, name='sku-chart'),
 ]

@@ -103,6 +103,7 @@ min-width: 800px;
     float: left;
     position: fixed;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -122,7 +123,7 @@ min-width: 800px;
 
 }
 
-.content .content-inner > img{
+.content > .content-inner >.img_32{
     min-width: 395px;
     margin-right: 0.3%;
     margin-bottom: 10px;
@@ -141,9 +142,9 @@ min-width: 800px;
     text-align: center;
 }
 
-.panel-inner{
+.panel-inner2{
     text-align: center;
-    line-height: 75px;
+    margin-top: 10px;
 }
 .btn-xs-mb{
     margin-bottom: 5px;
@@ -163,4 +164,24 @@ min-width: 800px;
 }
 .fa-refresh{
     cursor: pointer;
+}
+
+.file-up-inner{
+    min-width: 320px;
+}
+.panel-body{
+    overflow: hidden;
+}
+
+.panel2{
+    margin: 0 auto;
+}
+.accordion-inner a:hover, .accordion-inner a.active{
+  border-left: 2px solid #76777C;
+}
+
+.accordion-inner{
+  background-color: #3D3E43;
+  border: none;
+  padding: 9px 0;
 }

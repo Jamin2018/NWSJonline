@@ -38,16 +38,25 @@
     <div class="accordion">
         <div class="accordion-group">
             <div class="accordion-heading">
-                <a class="accordion-toggle b_C3F7A7 collapsed" data-toggle="collapse" data-parent="#accordion2" href="{% url 'index' %}"><i class="fa fa-line-chart" aria-hidden="true"></i> <span>Charts</span></a>
+                <a class="accordion-toggle b_C3F7A7  menu-firs" data-toggle="collapse" data-parent="#accordion" href="#collapse1"><i class="fa fa-line-chart" aria-hidden="true"></i> <span>Charts</span></a>
+            </div>
+            <div id="collapse1" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <a class="accordion-toggle" href="{% url 'index' %}"><i class="icon-star"></i> All Charts</a>
+                    <a class="accordion-toggle" href="{% url 'sku-chart' %}"><i class="icon-list-alt"></i> Chart</a>
+                    <a class="accordion-toggle" href="#"><i class="icon-table"></i> Data Tables</a>
+                    <a class="accordion-toggle" href="#"><i class="icon-circle"></i> Data Model</a>
+                </div>
             </div>
         </div>
     </div>
+
+
 </div>
 
 {% block content %}
 
 {% endblock %}
-
 
 {% block js %}
 {% endblock %}
