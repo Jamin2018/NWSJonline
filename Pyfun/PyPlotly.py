@@ -6,7 +6,7 @@ import plotly.offline as py
 from plotly.graph_objs import Scatter, Layout
 import plotly.graph_objs as go
 import PyDataFun
-
+import random
 
 
 
@@ -102,17 +102,18 @@ def draw_line_day_sku_list(dic):
             name=i,
             line=dict(
                 shape='spline'
-            )
+            ),
         )
         data.append(line)
 
     layout = dict(title = '每日订单数',
                   xaxis = dict(title = '日期'),
                   yaxis = dict(title = '个数'),
+
                   )
     fig = dict(data=data, layout=layout)
 
-    filename = os.getcwd() + u'/templates/index_chart_html/每日订单数'
+    filename = os.getcwd() + u'/templates/index_chart_html/2_每日订单数'
     py.plot(fig, filename=filename)
 
 
@@ -145,35 +146,207 @@ def draw_bar_sku_count(dic):
     Sr = dic['data']
 
     df = Sr.to_frame(name='count')
-    df =  df.loc[sku_name_list_sort[:5]]
-
-
+    n = df.sum()
+    df =  df.loc[sku_name_list_sort]
     # 设置color颜色集合
-    color_list = ['rgba(#c9302c)','rgba(#449d44)','rgba(#31b0d5)','rgba(#ec971f)','rgba(#31b0d5)','rgba(#fdff5c)','rgba(#ec91ff)','rgba(#b9fff2)','rgba(#dcb2f2)','rgba(#8c8dda)']
-    print color_list[:5]
+    color_list = []
+    for i in range(len(df)):
+        r = random.randint(0,255)
+        b = random.randint(0,255)
+        a = random.randint(0,255)
+        color_str = 'rgba(%s,%s,%s,0.7)' % (r,b,a)
+        color_list.append(color_str)
+    # 生成百分比
+    df['proportion'] = df['count'].apply(lambda x:'总占比：'+str(round((x/n)*100,3))+'%')
+    text = df['proportion']
+
     data = [go.Bar(
         x = df.index,
         y = df['count'],
+        text = text,
         marker = dict(
-            color = ['rgba(222,45,38,0.8)','rgba(0,255,127,0.8)','rgba(222,45,38,0.8)','rgba(#ec971f)','rgba(#31b0d5)']
+            color = color_list
         )
     )]
-
-
-    layout = dict(title = 'SKU系列前五订单数',
+    layout = dict(title = 'SKU系列前%s订单数' % len(df),
                   xaxis = dict(title = '系列名'),
-                  yaxis = dict(title = '个数'),
+                  yaxis = dict(type='log',title = '个数'),
+                  paper_bgcolor='rgb(240, 240, 240)',
+                  plot_bgcolor='rgb(240, 240, 240)',
                   )
+
+
     fig = dict(data=data, layout=layout)
 
-    filename = os.getcwd() + u'/templates/index_chart_html/SKU系列前五订单数'
+    filename = os.getcwd() + u'/templates/index_chart_html/1_SKU系列前几订单数'
     py.plot(fig,filename = filename)
 
+def dict_pie_count_profits():
+    with open(os.getcwd()+'/media/data/data.pkl', 'rb') as f:
+        data = f.read()
+        data_dict = pickle.loads(data)
+        sku_useful_info_dict = data_dict['sku_useful_info_dict']
+        sku_name_list_sort = data_dict['sku_name_list_sort']
+
+    dic = {}
+    all_profits_list = []
+    all_count_list = []
+    for sku_name in sku_name_list_sort:
+        sku_useful_info = sku_useful_info_dict[sku_name]
+        sku_useful_info['profits'] = sku_useful_info['price-amount'] + sku_useful_info['item-related-fee-amount'] + sku_useful_info['product_cost_weight']
+        dic[sku_name] = sku_useful_info
+        all_profits_list.append(sku_useful_info['profits'].sum())
+        all_count_list.append(sku_useful_info['quantity-purchased'].sum())
+    all_profits = sum(all_profits_list)
+    all_count = sum(all_count_list)
+    return {'sku_useful_info_dict':dic,'sku_name_list_sort':sku_name_list_sort,'all_profits':all_profits,'all_count':all_count}
 
 
+def draw_pie_count_profits(dic):
+    sku_useful_info_dict = dic['sku_useful_info_dict']
+    sku_name_list_sort = dic['sku_name_list_sort']
+    all_profits = dic['all_profits']
+    all_count = dic['all_count']
+    sku_count_values = []
+    sku_profits_values = []
+    sku_labels = []
+    for sku_name in sku_name_list_sort[:9]:
+        sku_useful_info = sku_useful_info_dict[sku_name]
+        sku_useful_info = sku_useful_info.sum()
+        sku_count_values.append(sku_useful_info['quantity-purchased'])
+        sku_profits_values.append(sku_useful_info['profits'])
+        sku_labels.append(sku_name)
+    sku_count_values.append(all_count - sum(sku_count_values))
+    sku_profits_values.append(all_profits - sum(sku_profits_values))
+    sku_labels.append('其他')
+
+    fig = {
+        "data": [
+            {
+                "values": sku_count_values,
+                "labels": sku_labels,
+                "domain": {"x": [0, .48]},
+                "name": "订单总占比",
+                "hoverinfo": "label+percent+name",
+                "hole": .4,
+                "type": "pie"
+            },
+            {
+                "values": sku_profits_values,
+                "labels": sku_labels,
+                "text": "CO2",
+                "textposition": "inside",
+                "domain": {"x": [.52, 1]},
+                "name": "利润总占比",
+                "hoverinfo": "label+percent+name",
+                "hole": .4,
+                "type": "pie"
+            }],
+        "layout": {
+            'paper_bgcolor' : 'rgb(240, 240, 240)',
+            'plot_bgcolor' : 'rgb(240, 240, 240)',
+            "title": "订单-利润",
+            "annotations": [
+                {
+                    "font": {
+                        "size": 20
+                    },
+                    "showarrow": False,
+                    "text": '订单总量：%s'% int(all_count),
+                    "x": 0.20,
+                    "y": 1.1
+                },
+                {
+                    "font": {
+                        "size": 20
+                    },
+                    "showarrow": False,
+                    "text": '总利润：%s美元'% round(all_profits,2),
+                    "x": 0.82,
+                    "y": 1.1
+                }
+            ]
+        }
+    }
+    filename = os.getcwd() + u'/templates/index_chart_html/3_订单利润总占比'
+    py.plot(fig, filename = filename)
+
+
+
+def test():
+    import plotly.offline as off
+
+    import pandas as pd
+
+    off.init_notebook_mode(connected=False)
+
+    df = pd.read_csv("https://plot.ly/~public.health/17.csv")
+
+    print df['date'].head(5)
+
+    # data = [dict(
+    #     x=df['date'],
+    #     autobinx=False,
+    #     autobiny=True,
+    #     marker=dict(color='rgb(68, 68, 68)'),
+    #     name='date',
+    #     type='histogram',
+    #     xbins=dict(
+    #         end='2016-12-31 12:00',
+    #         size='M1',
+    #         start='1983-12-31 12:00'
+    #     )
+    # )]
+    #
+    # layout = dict(
+    #     paper_bgcolor='rgb(240, 240, 240)',
+    #     plot_bgcolor='rgb(240, 240, 240)',
+    #     title='<b>Shooting Incidents</b>',
+    #     xaxis=dict(
+    #         title='',
+    #         type='date'
+    #     ),
+    #     yaxis=dict(
+    #         title='Shootings Incidents',
+    #         type='linear'
+    #     ),
+    #     updatemenus=[dict(
+    #         x=0.1,
+    #         y=1.15,
+    #         xref='paper',
+    #         yref='paper',
+    #         yanchor='top',
+    #         active=1,
+    #         showactive=True,
+    #         buttons=[
+    #             dict(
+    #                 args=['xbins.size', 'D1'],
+    #                 label='Day',
+    #                 method='restyle',
+    #             ), dict(
+    #                 args=['xbins.size', 'M1'],
+    #                 label='Month',
+    #                 method='restyle',
+    #             ), dict(
+    #                 args=['xbins.size', 'M3'],
+    #                 label='Quater',
+    #                 method='restyle',
+    #             ), dict(
+    #                 args=['xbins.size', 'M6'],
+    #                 label='Half Year',
+    #                 method='restyle',
+    #             ), dict(
+    #                 args=['xbins.size', 'M12'],
+    #                 label='Year',
+    #                 method='restyle',
+    #             )]
+    #     )]
+    # )
+    #
+    # off.iplot({'data': data, 'layout': layout}, validate=False)
 
 if __name__ == '__main__':
-    pass
+    test()
     # df = test()
-    # draw_day_order_refund(df)
+    # draw_day_order_refund(df)dd
     # print df_day_sku_list()

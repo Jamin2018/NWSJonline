@@ -1,10 +1,7 @@
 
 
-$(function(){dd
+$(function(){
     $('#panel-btn-3').trigger('click');
-
-
-
 });
 
 

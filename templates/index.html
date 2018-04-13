@@ -8,15 +8,17 @@
 {% block content %}
     <div class="content">
         {% include '_charts_content_nav.html' %}
-        <div class="content-inner" id="content-inner">
-            <div class="row">
-                {% for chart_name in chart_name_list %}
-                    <div class="col-md-12" style="margin-bottom: 20px">
+        {% for chart_name in chart_name_list %}
+            <div class="content-inner" id="content-inner">
+                <div class="row">
+
+                    <div class="col-md-12" style="height:600px !important">
                         {% include chart_name %}
                     </div>
-                {% endfor %}
+
+                </div>
             </div>
-        </div>
+        {% endfor %}
     </div>
 {% endblock %}
 

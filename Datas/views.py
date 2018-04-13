@@ -87,7 +87,8 @@ def DataAutoDrawView(request):
     PyPlotly.draw_line_day_sku_list(line_dict)
     bar_dict = PyPlotly.dict_bar_sku_count()
     PyPlotly.draw_bar_sku_count(bar_dict)
-
+    pie_dict = PyPlotly.dict_pie_count_profits()
+    PyPlotly.draw_pie_count_profits(pie_dict)
     return HttpResponse(json.dumps({"err": 0, "msg": "OK"}), content_type='application/json')
 
 
