@@ -86,7 +86,7 @@ body{
 }
 
 .content-nav{
-min-width: 800px;
+    min-width: 800px;
 }
 
 
@@ -118,7 +118,7 @@ min-width: 800px;
 
 
 .content-inner{
-min-width: 800px;
+    min-width: 800px;
     border: 1px solid #ddd;
 
 }
@@ -179,11 +179,11 @@ min-width: 800px;
     margin: 0 auto;
 }
 .accordion-inner a:hover, .accordion-inner a.active{
-  border-left: 2px solid #76777C;
+    border-left: 2px solid #76777C;
 }
 
 .accordion-inner{
-  background-color: #3D3E43;
-  border: none;
-  padding: 9px 0;
+    background-color: #3D3E43;
+    border: none;
+    padding: 9px 0;
 }

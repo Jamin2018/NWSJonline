@@ -52,22 +52,21 @@ def DataInputView(request):
 
         try:
             path = os.getcwd()
-            product_cost_weight_path = os.getcwd() + r'/static/data/product_cost_weight-sample.xlsx'
-            filepath = path + r'/static/data/' + file_csv.name
-            with open(path + r'/static/data/' + file_csv.name,'wb') as f:
+            product_cost_weight_path = os.getcwd() + r'/media/data/product_cost_weight-sample.xlsx'
+            filepath = path + r'/media/data/' + file_csv.name
+            with open(path + r'/media/data/' + file_csv.name,'wb') as f:
                 for i in file_csv.chunks():
                     f.write(i)
-            with open(path + r'/static/data/' + file_xlsx.name,'wb') as f:
+            with open(path + r'/media/data/' + file_xlsx.name,'wb') as f:
                 for i in file_xlsx.chunks():
                     f.write(i)
             df_csv = PyDataFun.get_df(filepath,usecols =[6,7, 17, 21, 22, 24, 26])
             sku_name_list = PyDataFun.get_sku_name_list(df_csv)  # 获得列表名
             sku_info_dict = PyDataFun.get_sku_info_dict(df_csv, sku_name_list)  # 根据列名获取相关字典信息
-            # print sku_info_dict
             sku_name_list_sort = PyDataFun.get_orderly_sku_list(sku_info_dict, transaction_type='Order', reverse=True, product_cost_weight_path = product_cost_weight_path)
             sku_useful_info_dict = PyDataFun.get_sku_useful_info_dict(sku_name_list_sort, sku_info_dict, product_cost_weight_path = product_cost_weight_path) # 获得处理后，有用，字典信息
             datas_dict = {'sku_useful_info_dict':sku_useful_info_dict,'sku_info_dict':sku_info_dict,'sku_name_list_sort':sku_name_list_sort,}
-            with open(path + r'/static/data/data.pkl','wb') as f:
+            with open(path + r'/media/data/data.pkl','wb') as f:
                 data = pickle.dumps(datas_dict)
                 f.write(data)
             return HttpResponse(json.dumps({"err": 0, "msg": "数据解析完毕"}),content_type='application/json')
@@ -84,8 +83,10 @@ def DataAutoDrawView(request):
     :param request:
     :return:
     '''
-    dic= PyPlotly.df_day_sku_list()
-    PyPlotly.draw_day_sku_list(dic)
+    line_dict= PyPlotly.dict_line_day_sku_list()
+    PyPlotly.draw_line_day_sku_list(line_dict)
+    bar_dict = PyPlotly.dict_bar_sku_count()
+    PyPlotly.draw_bar_sku_count(bar_dict)
 
     return HttpResponse(json.dumps({"err": 0, "msg": "OK"}), content_type='application/json')
 
@@ -99,7 +100,7 @@ def SkuNameListUpdateView(request):
     '''
     path = os.getcwd()
     try:
-        with open(path + r'/static/data/data.pkl', 'rb') as f:
+        with open(path + r'/media/data/data.pkl', 'rb') as f:
             data = f.read()
             datas = pickle.loads(data)
             sku_name_list = datas['sku_name_list_sort']
@@ -202,3 +203,39 @@ def SkuChartTableView(request):
             chart_name_list.append(i.decode('GB2312').encode('utf-8'))
 
     return render(request, 'chart_table.html',{'chart_name_list':chart_name_list,})
+
+
+
+#  ---------------websocket长连接测试---------------------
+from dwebsocket import require_websocket
+def socket_test(request):
+    return render(request,'socket_test.html')
+
+@require_websocket
+def echo_once(request):
+    message = request.websocket.wait()
+    request.websocket.send('你好')
+    time.sleep(5)
+    request.websocket.send('5秒后，你好')
+    time.sleep(5)
+    request.websocket.send('10秒后，你好')
+
+
+from dwebsocket.decorators import accept_websocket,require_websocket
+def socket_test2(request):
+    return render(request,'socket_test2.html')
+
+@accept_websocket
+def echo(request):
+    if not request.is_websocket():#判断是不是websocket连接
+        try:#如果是普通的http方法
+            message = request.GET['message']
+            return HttpResponse(message)
+        except:
+            return render(request,'index.html')
+    else:
+        n = 1
+        for message in request.websocket:
+            request.websocket.send('第%s次' % n)#发送消息到客户端
+            n +=1
+#  ---------------websocket长连接测试---------------------

@@ -98,7 +98,7 @@ def get_sku_useful_info_dict(sku_name_list,sku_info_dict,product_cost_weight_pat
 
 def draw_day_sku_list(sku_useful_info_dict):
     '''
-    传入想查询的信息字典，经过处理，获得关系图
+    每日订单
     '''
     sku_list = []
     for sku_name, v in sku_useful_info_dict.items():
@@ -136,11 +136,11 @@ def draw_day_profits_list(sku_useful_info_dict):
     # 绘图
     path = os.getcwd()
     filepath = path + r'/static/img/data/'
-    drawing(data, title=u'每日利润',to_imgpath=filepath)
+    # drawing(data, title=u'每日利润',to_imgpath=filepath)
     return (data)
 
 
-def draw_day_profit_price(sku_name,sku_info_dict,subplots=True, product_cost_weight_path = None):
+def get_day_profit_price(sku_name,sku_info_dict,subplots=True, product_cost_weight_path = None):
     '''
     获得单系列每日平均售价和每日利润的关系图
     '''

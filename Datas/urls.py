@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from Datas.views import DataIndexView, DataInputView, DataAutoDrawView, SkuNameListUpdateView, ImgsNameListView
 from Datas.views import ChooseSkuDrawView, SkuChartView, SkuChartTableView
+from Datas.views import echo_once,socket_test,socket_test2,echo
 
 
 urlpatterns = [
@@ -27,4 +28,8 @@ urlpatterns = [
     url(r'^choose-sku-draw/$', ChooseSkuDrawView, name='choose-sku-draw'),
     url(r'^sku-chart/$', SkuChartView, name='sku-chart'),
     url(r'^sku-chart_table/$', SkuChartTableView, name='sku-chart-table'),
+    url(r'^echo_once/$', echo_once, name='echo_once'),
+    url(r'^echo$', echo, name='echo'),
+    url(r'^socket_test/$', socket_test, name='socket_test'),
+    url(r'^socket_test2/$', socket_test2, name='socket_test2'),
 ]
