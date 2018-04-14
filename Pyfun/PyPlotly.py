@@ -98,7 +98,7 @@ def draw_line_day_sku_list(dic):
         line = go.Scatter(
             x=df.index,
             y=df[u'%s' % i],
-            mode='lines+markers',
+            mode='lines',
             name=i,
             line=dict(
                 shape='spline'

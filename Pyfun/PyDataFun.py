@@ -154,9 +154,6 @@ def get_day_profit_price(sku_name,sku_info_dict,subplots=True, product_cost_weig
     average_price,profit_day = average_price.to_frame(name=u'每日均价'),profit_day.to_frame(name=u'每日利润')
     data = pd.concat([average_price,profit_day], axis=1)
     return data
-    # path = os.getcwd()
-    # filepath = path + r'/static/img/chart/'
-    # draw_chart_table(data, to_imgpath = filepath, title=u'%s系列每日均价-利润对比图' % sku_name, subplots=subplots,ylabel = u'美元', fontsize=14, rot = 30)
 
 
 def draw_day_order_refund(sku_name,sku_info_dict,product_cost_weight_path = None):
@@ -173,107 +170,6 @@ def draw_day_order_refund(sku_name,sku_info_dict,product_cost_weight_path = None
 
     path = os.getcwd()
     filepath = path + r'/static/img/chart/'
-    drawing(df_price_spread, to_imgpath = filepath, title=u'%s订单-退款关系图' % sku_name, fontsize=14, rot = 30)
-
-
-def drawing(df, to_imgpath = None, kind = 'line', title=u'数据分析', color = None, figsize = (10,10), linewidth = 1.5, alpha = 0.8,
-            subplots=False, ylabel = u'', grid = True, fontsize = 15, legend=True , rot = 0):
-    '''
-    将数据在图上绘制（title命名不要加“/”等特殊字符）
-    :param csv:
-    :return:
-    '''
-    # 设置中文字体
-    plt.rcParams['font.sans-serif'] = ['FangSong']
-    plt.rcParams['axes.unicode_minus'] = False
-    # matplotlib.rc('font', **{'family': 'SimHei'})
-    # 自定义颜色
-    # if type(csv) == list:
-    #     plt.plot(csv[u'YSW5402系列'], 'g-', csv[u'YSW1623系列'], 'r-')
-    df.plot(kind = kind , subplots=subplots,color = color,linewidth = linewidth , linestyle = '-' , title = title, alpha = alpha,rot=rot,
-            figsize = figsize,fontsize = fontsize,grid=grid,legend=legend,)
-
-    # 自动化最佳比例
-    if kind != 'bar':
-        plt.autoscale(tight=True)
-    plt.xlabel(u'2018/2/12 - 2018/2/26')
-    plt.ylabel(ylabel)
-    # 设置y轴范围
-    # plt.ylim(0,150)
-    plt.savefig(to_imgpath+'%s.jpg' % title)
-    plt.show()
-
-
-def draw_bar(df, to_imgpath = None,section = 5, kind = 'line', title=u'数据分析', color = None, figsize = (10,10), linewidth = 1.5,
-             alpha = 0.8, subplots=False, ylabel = u'', grid = True, legend=True, rot = 0):
-    '''
-    将数据在图上绘制（title命名不要加“/”等特殊字符）
-    :param csv:
-    :return:
-    '''
-    # 设置中文字体
-    plt.rcParams['font.sans-serif'] = ['FangSong']
-    plt.rcParams['axes.unicode_minus'] = False
-
-    # matplotlib.rc('font', **{'family': 'SimHei'})
-    # 自定义颜色
-    # if type(csv) == list:
-    #     plt.plot(csv[u'YSW5402系列'], 'g-', csv[u'YSW1623系列'], 'r-')
-    df.plot(kind = kind , subplots=subplots,linewidth = linewidth , linestyle = '-' , title = title, alpha = alpha,rot=rot,
-            figsize = figsize,fontsize = 7,grid=grid,legend=legend)
-    # 标注坐标
-    x = [x for x in range(section)]
-    y = [int(y[0]) for y in df.values]
-
-    # 添加柱状图值
-    for x,y in zip(x,y):
-        plt.text(x,y,y,color="black",ha='center',va='bottom')
-
-    plt.xlabel(u'2018/2/12 - 2018/2/26')
-    plt.ylabel(ylabel)
-    plt.savefig(to_imgpath+'%s.jpg' % title)
-    plt.show()
-
-
-
-def draw_chart_table(df, to_imgpath=None, kind='line', title=u'数据分析', color=None, figsize=(10, 10), linewidth=1.5, alpha=0.8,
-            subplots=False, ylabel=u'', grid=True, fontsize=15, legend=True, rot=0):
-    '''
-    将数据在图上绘制（title命名不要加“/”等特殊字符）
-    :param csv:
-    :return:
-    '''
-    # 设置中文字体
-    plt.rcParams['font.sans-serif'] = ['FangSong']
-    plt.rcParams['axes.unicode_minus'] = False
-    # matplotlib.rc('font', **{'family': 'SimHei'})
-    # 自定义颜色
-    # if type(csv) == list:
-    #     plt.plot(csv[u'YSW5402系列'], 'g-', csv[u'YSW1623系列'], 'r-')
-    df.plot(kind=kind, subplots=subplots, color=color, linewidth=linewidth, linestyle='-', title=title, alpha=alpha,
-            rot=rot,
-            figsize=figsize, fontsize=fontsize, grid=grid, legend=legend, )
-
-    # 绘制表格
-    col_labels = ['a','b','c']
-    row_labels = ['row1','row2','row3']
-    table_v = [[1,2,3],[4,5,6],[7,8,9]]
-    my_table = plt.table(cellText = table_v,
-                         rowLabels = row_labels,
-                         colLabels = col_labels,
-                         loc = 'upper right')
-
-
-    # 自动化最佳比例
-    if kind != 'bar':
-        plt.autoscale(tight=True)
-    plt.xlabel(u'2018/2/12 - 2018/2/26')
-    plt.ylabel(ylabel)
-    # 设置y轴范围
-    # plt.ylim(0,150)
-    plt.savefig(to_imgpath + '%s.jpg' % title)
-    plt.show()
-
 
 
 if __name__ == '__main__':
@@ -295,7 +191,3 @@ if __name__ == '__main__':
     refund_sku_useful_info = get_sku_useful_info(sku_name,sku_info,transaction_type = 'Refund')     # 获得退款单个有用信息，根据需求,处理后的sku信息
     print(sku_useful_info.head(5))
     sku_useful_info_dict = get_sku_useful_info_dict(sku_name_list_sort[:5], sku_info_dict)  # 获得选择的sku字典信息
-    draw_day_sku_list(sku_useful_info_dict)
-    draw_day_profits_list(sku_useful_info_dict)
-    draw_day_profit_price(sku_name,sku_info_dict)
-    draw_day_order_refund(sku_name,sku_info_dict)

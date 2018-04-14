@@ -52,7 +52,7 @@ def DataInputView(request):
 
         try:
             path = os.getcwd()
-            product_cost_weight_path = os.getcwd() + r'/media/data/product_cost_weight-sample.xlsx'
+            product_cost_weight_path = os.getcwd() + r'/media/data/' + file_xlsx.name
             filepath = path + r'/media/data/' + file_csv.name
             with open(path + r'/media/data/' + file_csv.name,'wb') as f:
                 for i in file_csv.chunks():
@@ -60,12 +60,53 @@ def DataInputView(request):
             with open(path + r'/media/data/' + file_xlsx.name,'wb') as f:
                 for i in file_xlsx.chunks():
                     f.write(i)
-            df_csv = PyDataFun.get_df(filepath,usecols =[6,7, 17, 21, 22, 24, 26])
+            df_csv = PyDataFun.get_df(filepath, usecols=[1, 2, 6, 7, 17, 21, 22, 24, 26])
+            #
+            # old_start_date = df_csv['settlement-start-date'].to_frame().iloc[0, 0],
+            # old_end_date = df_csv['settlement-end-date'].to_frame().iloc[0, 0],
+            # try:
+            #     with open(path + r'/media/data/data.pkl', 'rb') as f:
+            #         data = f.read()
+            #         datas_dict = pickle.loads(data)
+            #         old_start_date = datas_dict['date_start_end']['start_date']
+            #         old_end_date = datas_dict['date_start_end']['end_date']
+            #         print old_start_date
+            #         print old_end_date
+            # except Exception as e:
+            #     print '没找到时间'
+            #     pass
+            #
+            # start_date=df_csv['settlement-start-date'].to_frame().iloc[0, 0]
+            # end_date=df_csv['settlement-end-date'].to_frame().iloc[0, 0]
+            #
+            #
+            # if old_start_date <= start_date and old_end_date <= start_date:
+            #     print '1'
+            #     pass
+            # elif old_start_date <= start_date and old_end_date > start_date:
+            #     start_date = old_end_date
+            #     print '2'
+            # elif end_date <= old_start_date:
+            #     print '3'
+            #     pass
+            # elif end_date >= old_start_date and end_date <= old_end_date:
+            #     end_date = old_start_date
+            #     print '4'
+            # else:
+            #     print '没成功'
+            # df_csv = df_csv[(df_csv['posted-date'] >= start_date) & (df_csv['posted-date'] <= end_date)]
+
             sku_name_list = PyDataFun.get_sku_name_list(df_csv)  # 获得列表名
             sku_info_dict = PyDataFun.get_sku_info_dict(df_csv, sku_name_list)  # 根据列名获取相关字典信息
             sku_name_list_sort = PyDataFun.get_orderly_sku_list(sku_info_dict, transaction_type='Order', reverse=True, product_cost_weight_path = product_cost_weight_path)
             sku_useful_info_dict = PyDataFun.get_sku_useful_info_dict(sku_name_list_sort, sku_info_dict, product_cost_weight_path = product_cost_weight_path) # 获得处理后，有用，字典信息
-            datas_dict = {'sku_useful_info_dict':sku_useful_info_dict,'sku_info_dict':sku_info_dict,'sku_name_list_sort':sku_name_list_sort,}
+            # 数据开始结束时间
+            date_start_end = {
+                'start_date':df_csv['settlement-start-date'].to_frame().iloc[0,0],
+                'end_date':df_csv['settlement-end-date'].to_frame().iloc[0,0],
+            }
+            datas_dict = {'date_start_end':date_start_end,'sku_useful_info_dict':sku_useful_info_dict,'sku_info_dict':sku_info_dict,'sku_name_list_sort':sku_name_list_sort,}
+
             with open(path + r'/media/data/data.pkl','wb') as f:
                 data = pickle.dumps(datas_dict)
                 f.write(data)
@@ -74,7 +115,6 @@ def DataInputView(request):
             print (e)
             time.sleep(1)
             return HttpResponse(json.dumps({"err": -1, "msg": "数据解析错误"}),content_type='application/json')
-
 
 @csrf_exempt
 def DataAutoDrawView(request):
