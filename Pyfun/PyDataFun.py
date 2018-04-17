@@ -30,13 +30,13 @@ def get_sku_name_list(df):
         sku_name_set.add(a)
     return sku_name_set
 
-def get_orderly_sku_list(sku_info_dict, transaction_type = 'Order', reverse=True , product_cost_weight_path = None):
+def get_orderly_sku_list(sku_info_dict, transaction_type = 'Order', reverse=True , product_cost_weight = None):
     '''
     获得有序列表名
     '''
     sku_count_dict = {}
     for sku_name,sku_info in sku_info_dict.items():
-        sku_useful_info = get_sku_useful_info(sku_name, sku_info, transaction_type = transaction_type,product_cost_weight_path= product_cost_weight_path)  # 获得订单单个有用信息，根据需求,处理后的sku信息
+        sku_useful_info = get_sku_useful_info(sku_name, sku_info, transaction_type = transaction_type,product_cost_weight= product_cost_weight)  # 获得订单单个有用信息，根据需求,处理后的sku信息
         sku_count = sku_useful_info['quantity-purchased'].sum(axis=0)
         sku_count_dict[sku_name]=sku_count
 
@@ -55,7 +55,8 @@ def get_sku_info_dict(df,sku_name_list):
     for i in sku_name_list:
         r = r'(%s)-' % i
         # print(df_csv['sku'].index)
-        data = df[df['sku'].str.contains(r, na=True)]  # 分别筛选各个系列的详细数据
+        m = df['sku'].fillna('0')
+        data = df[m.str.contains(r, na=True)]  # 分别筛选各个系列的详细数据
         dic[i] = data
     return dic
 
@@ -68,11 +69,11 @@ def get_sku_info(sku_name,sku_info_dict):
     return sku_info
 
 
-def get_sku_useful_info(sku_name,sku_info,exchange_rate = 0.1589,transaction_type ='Order', product_cost_weight_path= None):
+def get_sku_useful_info(sku_name,sku_info,exchange_rate = 0.1589,transaction_type ='Order', product_cost_weight= None):
     '''
     获得单个有用shu数据，根据需求,处理后的sku信息
     '''
-    product_cost_weight = get_df(product_cost_weight_path)
+    product_cost_weight = product_cost_weight
     df_product_cost_weight = product_cost_weight[product_cost_weight['style'] == sku_name]
     sku_useful_info = sku_info[sku_info['transaction-type'] == transaction_type ]
     # 处理时间数据，生成新的CSV数据表
@@ -84,14 +85,14 @@ def get_sku_useful_info(sku_name,sku_info,exchange_rate = 0.1589,transaction_typ
     return (sku_useful_info)
 
 
-def get_sku_useful_info_dict(sku_name_list,sku_info_dict,product_cost_weight_path= None):
+def get_sku_useful_info_dict(sku_name_list,sku_info_dict,product_cost_weight= None):
     '''
     传入一个想查询的列表名，获得该列表的信息字典
     '''
     sku_dict = {}
     for sku_name in sku_name_list:
         sku_info = get_sku_info(sku_name, sku_info_dict)  # 获得单个sku信息
-        sku_useful_info = get_sku_useful_info(sku_name, sku_info,product_cost_weight_path = product_cost_weight_path)  # 获得单个有用信息，根据需求,处理后的sku信息
+        sku_useful_info = get_sku_useful_info(sku_name, sku_info,product_cost_weight = product_cost_weight)  # 获得单个有用信息，根据需求,处理后的sku信息
         sku_dict[sku_name] = sku_useful_info
     return sku_dict
 
@@ -114,7 +115,7 @@ def draw_day_sku_list(sku_useful_info_dict):
 
     path = os.getcwd()
     filepath = path + r'/static/img/data/'
-    drawing(data,title=u'每日订单数',to_imgpath = filepath)
+    # drawing(data,title=u'每日订单数',to_imgpath = filepath)
     return (data)
 
 
@@ -154,22 +155,6 @@ def get_day_profit_price(sku_name,sku_info_dict,subplots=True, product_cost_weig
     average_price,profit_day = average_price.to_frame(name=u'每日均价'),profit_day.to_frame(name=u'每日利润')
     data = pd.concat([average_price,profit_day], axis=1)
     return data
-
-
-def draw_day_order_refund(sku_name,sku_info_dict,product_cost_weight_path = None):
-    sku_info = get_sku_info(sku_name, sku_info_dict)  # 获得单个sku信息
-    sku_useful_info = get_sku_useful_info(sku_name, sku_info, transaction_type='Order', product_cost_weight_path = product_cost_weight_path)  # 获得订单单个有用信息，根据需求,处理后的sku信息
-    refund_sku_useful_info = get_sku_useful_info(sku_name, sku_info, transaction_type='Refund', product_cost_weight_path = product_cost_weight_path)  # 获得退款单个有用信息，根据需求,处理后的sku信息
-    order_price_day = sku_useful_info['price-amount']
-    refund_price_day = refund_sku_useful_info['price-amount']
-    order_profit_day, refund_profit_day = order_price_day.to_frame(name=u'订单金额'), refund_price_day.to_frame(name=u'退款金额')
-    df_price_spread = pd.concat([order_profit_day, refund_profit_day],axis=1)
-    _ = df_price_spread.fillna(0, inplace=True)
-    df_price_spread[u'实际订单金额'] = df_price_spread.sum(axis=1)
-    df_price_spread[u'退款金额'] = -df_price_spread[u'退款金额']
-
-    path = os.getcwd()
-    filepath = path + r'/static/img/chart/'
 
 
 if __name__ == '__main__':

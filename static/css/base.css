@@ -106,22 +106,17 @@ body{
     overflow-x: hidden;
 }
 
-
 .panelstyle{
     display: inline-block;
     width: 100%;
-    height: 175px;
+    height: 225px;
     margin-right: 0.5%;
 }
-
-
-
 
 .content-inner{
     min-width: 800px;
     border: 1px solid #ddd;
     border-bottom: none;
-
 }
 
 .content > .content-inner >.img_32{
@@ -143,10 +138,6 @@ body{
     text-align: center;
 }
 
-.panel-inner2{
-    text-align: center;
-    margin-top: 10px;
-}
 .btn-xs-mb{
     width: 72px;
     margin-bottom: 5px;
@@ -158,12 +149,13 @@ body{
 
 .sku-list{
     overflow-y:scroll ;
-    height: 105px;
+    height: 150px;
 }
 
 .color_red{
     color: red;
 }
+
 .fa-refresh{
     cursor: pointer;
 }
@@ -189,4 +181,10 @@ body{
     padding: 9px 0;
 }
 
+.btn-group > .btn:first-child {
+    width: 150px;
+}
 
+.panel-msg-height{
+    line-height: 30px;
+}

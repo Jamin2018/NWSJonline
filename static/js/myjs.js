@@ -1,7 +1,65 @@
 
-
 $(function(){
     $('#panel-btn-3').trigger('click');
+});
+
+$(function() {
+    $(".selectpicker").selectpicker({
+        noneSelectedText : '请选择'
+    });
+
+    $(window).on('load', function() {
+        $('.selectpicker').selectpicker('val', '');
+        $('.selectpicker').selectpicker('refresh');
+    });
+
+    // 下拉数据加载
+    $.ajax({
+        type : 'get',
+        url :"/account-list/",
+        dataType : 'json',
+        success : function(datas) {//返回list数据并循环获取
+            var select = $("#account1");
+            for (var i = 0; i < datas['account_list'].length; i++) {
+                select.append("<option value='"+datas['account_list'][i]+"'>"
+                    + datas['account_list'][i] + "</option>");
+            }
+            $('.selectpicker').selectpicker('val', '');
+            $('.selectpicker').selectpicker('refresh');
+        }
+    });
+    // 下拉数据加载
+    $.ajax({
+        type : 'get',
+        url :"/account-list/",
+        dataType : 'json',
+        success : function(datas) {//返回list数据并循环获取
+            var select = $("#account2");
+            for (var i = 0; i < datas['account_list'].length; i++) {
+                select.append("<option value='"+datas['account_list'][i]+"'>"
+                    + datas['account_list'][i] + "</option>");
+            }
+            $('.selectpicker').selectpicker('val', '');
+            $('.selectpicker').selectpicker('refresh');
+        }
+    });
+    // 下拉数据加载
+    $.ajax({
+        type : 'get',
+        url :"/account-list/",
+        dataType : 'json',
+        success : function(datas) {//返回list数据并循环获取
+            var select = $("#charts2");
+            for (var i = 0; i < datas['chart_type'].length; i++) {
+                for (var key in datas['chart_type'][i]){
+                    select.append("<option value='"+key+"'>"
+                        + datas['chart_type'][i][key] + "</option>");
+                }
+            }
+            $('.selectpicker').selectpicker('val', '');
+            $('.selectpicker').selectpicker('refresh');
+        }
+    });
 });
 
 
@@ -11,10 +69,12 @@ $('#datainput').click(function () {
     $('#panel1').empty();
     var file_csv = document.getElementById('datacsv').files[0];
     var file_xlsx = document.getElementById('dataxlsx').files[0];
+    var account1 = $('#account1').val();
     var fd = new FormData();
+    fd.append('account1',account1);
     fd.append('file_csv',file_csv);
     fd.append('file_xlsx',file_xlsx);
-    $('#panel1').html("解析中，请稍等&nbsp;&nbsp;<i class='fa fa-spinner fa-pulse'></i>");
+    $('#panel1').html("上传中，请稍等&nbsp;&nbsp;<i class='fa fa-spinner fa-pulse'></i>");
     $.ajax({
         url:"/data-input/",
         type:'POST',
@@ -37,8 +97,44 @@ $('#datainput').click(function () {
 });
 
 
+$('#dataparsing').click(function () {
+    $('#panel2').removeClass('color_red');
+    $('#panel2').show();
+    $('#panel2').empty();
+    var account2 = $('#account2').val();
+    var fd = new FormData();
+    fd.append('account2',account2);
+
+    $('#panel2').html("解析中，请稍等&nbsp;&nbsp;<i class='fa fa-spinner fa-pulse'></i>");
+    $.ajax({
+        url:"/data-parsing/",
+        type:'POST',
+        data:fd,
+        datatype: 'json',
+        processData: false,  // tell jQuery not to process the data
+        contentType: false,  // tell jQuery not to set contentType
+        success:function (arg) {
+            var err = arg['err'];
+            if(err == 0){
+                $('#panel2').html("<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>");
+                $('#panel2').show()
+            }else if(err == -1){
+                $('#panel2').text(arg['msg']);
+                $('#panel2').addClass('color_red');
+                $('#panel2').show()
+            }
+        }
+    })
+});
+
+
+
+
 $('#datainput2').click(function () {
-    $('#panel2').html("<i class='fa fa-spinner fa-pulse'></i>");
+    $('#panel2_2').removeClass('color_red');
+    $('#panel2_2').show();
+    $('#panel2_2').empty();
+    $('#panel2_2').html("<i class='fa fa-spinner fa-pulse'></i>");
     $.get("/data-auto-draw/", function(res){
         if(res['err'] === 0){
             console.log(res['msg']);
@@ -46,7 +142,12 @@ $('#datainput2').click(function () {
             if(test == '/'){
                 window.location.reload();
             }
-            $('#panel2').html("<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>");
+            $('#panel2_2').html("<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>");
+            $('#panel2').show()
+        }else if(err == -1){
+            $('#panel2').text(arg['msg']);
+            $('#panel2').addClass('color_red');
+            $('#panel2').show()
         }
     })
 });

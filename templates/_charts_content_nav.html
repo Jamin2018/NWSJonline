@@ -1,11 +1,20 @@
+
 <div class="content-nav">
     <div class="row">
         <div class="col-md-3"><div class="panel panel-default panel-primary panelstyle">
-            <div class="panel-heading">①数据解析</div>
+            <div class="panel-heading">①数据上传</div>
             <div class="panel-body">
                 <div class="datas-file">
                     <form id="dataform" name="dataform" method="post" action="{% url 'data-input' %}" enctype="multipart/form-data">
                         {% csrf_token %}
+                        <div class="row file-up-inner">
+                            <div class="col-xs-4" style="text-align: right">
+                                <button class="btn btn-success" style="width: 80px" type="button" value=""  onclick="">选择账户</button>
+                            </div>
+                            <div class="col-xs-6">
+                                <select id="account1" class="selectpicker" name="account1" style="width: 150px" data-live-search="false"></select>
+                            </div>
+                        </div>
                         <div class="row file-up-inner">
                             <div class="col-xs-4" style="text-align: right">
                                 <button class="btn btn-success" style="width: 80px" type="button" value="上传csv数据"  onclick="document.dataform.datacsv.click()">csv数据</button>
@@ -26,10 +35,10 @@
                         </div>
                         <div class="row file-up-inner">
                             <div class="col-xs-4" style="text-align: right">
-                                <button  id="datainput" style="width: 80px" type="button" class="btn btn-success">数据解析</button>
+                                <button  id="datainput" style="width: 80px" type="button" class="btn btn-success">上传数据</button>
                             </div>
                             <div class="col-xs-6" style="line-height: 34px">
-                                <span id="panel1"  class="panel-msg">解析中，请稍等</span>
+                                <span id="panel1"  class="panel-msg">上传数据中，请稍等</span>
                             </div>
                         </div>
                     </form>
@@ -37,17 +46,47 @@
                 </div>
             </div>
         </div></div>
-        <div class="col-md-3"><div class="panel panel-default panel-primary panelstyle">
-            <div class="panel-heading">②一键构图</div>
-            <div class="panel-body">
-                <div class="row datas-file panel-inner2">
-                    <input id="datainput2" class="btn btn-success" type="button" value="一键构图">
-                    <div class="panel2">
-                        <span id="panel2"></span>
+        <div class="col-md-3">
+            <div class="panel panel-default panel-primary panelstyle">
+                <div class="panel-heading">②一键构图</div>
+                <div class="panel-body">
+                    <div class="row file-up-inner">
+                        <div class="col-xs-4" style="text-align: right">
+                            <button class="btn btn-success" style="width: 80px" type="button" value=""  onclick="">选择账户</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <select id="account2" class="selectpicker" name="account2" style="width: 150px" data-live-search="false"></select>
+                        </div>
+                    </div>
+                    <div class="row file-up-inner">
+                        <div class="col-xs-4" style="text-align: right">
+                            <button id="dataparsing" class="btn btn-success" style="width: 80px" type="button" value=""  onclick="">解析数据</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <span id="panel2"  class="panel-msg panel-msg-height">解析数据中，请稍等</span>
+                        </div>
+                    </div>
+                    <div class="row file-up-inner">
+                        <div class="col-xs-4" style="text-align: right">
+                            <button class="btn btn-success" style="width: 80px" type="button" value=""  onclick="">图表类型</button>
+                        </div>
+                        <div class="col-xs-6">
+                            <select id="charts2" class="selectpicker" name="charts2" style="" data-live-search="false" multiple></select>
+                        </div>
+                    </div>
+                    <div class="row file-up-inner">
+                        <div class="col-xs-4" style="text-align: right">
+                            <input id="datainput2" style="width: 80px" class="btn btn-success" type="button" value="一键构图">
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="panel2">
+                                <span id="panel2_2" class="panel-msg panel-msg-height"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div></div>
+        </div>
         <div class="col-md-3"><div class="panel panel-default panel-primary panelstyle">
             <div class="panel-heading">③系列一览 <i id="panel-btn-3" class="fa fa-refresh fa-1x "></i></div>
             <div class="panel-body">
@@ -73,7 +112,6 @@
                 </div>
             </div>
         </div></div>
-        <div style="clear: both;"></div>
     </div>
 
 </div>

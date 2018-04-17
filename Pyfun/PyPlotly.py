@@ -7,7 +7,7 @@ from plotly.graph_objs import Scatter, Layout
 import plotly.graph_objs as go
 import PyDataFun
 import random
-
+import plotly.figure_factory as FF
 
 
 def draw_day_order_refund(df,sku_name = None):
@@ -57,6 +57,8 @@ def draw_day_order_refund(df,sku_name = None):
     fig = dict(data=data, layout=layout)
 
     filename = os.getcwd() + r'/templates/line_chart_html/order_refund_' + sku_name
+
+
     py.plot(fig, filename=filename)
 
 
@@ -148,6 +150,9 @@ def draw_bar_sku_count(dic):
     df = Sr.to_frame(name='count')
     n = df.sum()
     df =  df.loc[sku_name_list_sort]
+
+
+    df.insert(0,'sku', df.index)
     # 设置color颜色集合
     color_list = []
     for i in range(len(df)):
@@ -175,10 +180,14 @@ def draw_bar_sku_count(dic):
                   plot_bgcolor='rgb(240, 240, 240)',
                   )
 
-
     fig = dict(data=data, layout=layout)
 
     filename = os.getcwd() + u'/templates/index_chart_html/1_SKU系列前几订单数'
+
+    sample_data_table = FF.create_table(df)
+    print df.head(5)
+    py.plot(sample_data_table, filename='sample-data-table')
+
     py.plot(fig,filename = filename)
 
 def dict_pie_count_profits():
@@ -283,6 +292,7 @@ def test():
     df = pd.read_csv("https://plot.ly/~public.health/17.csv")
 
     print df['date'].head(5)
+
 
     # data = [dict(
     #     x=df['date'],
