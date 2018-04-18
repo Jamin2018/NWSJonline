@@ -98,14 +98,14 @@ $('#datainput').click(function () {
 
 
 $('#dataparsing').click(function () {
-    $('#panel2').removeClass('color_red');
-    $('#panel2').show();
-    $('#panel2').empty();
+    $('#panel2_1').removeClass('color_red');
+    $('#panel2_1').show();
+    $('#panel2_1').empty();
     var account2 = $('#account2').val();
     var fd = new FormData();
     fd.append('account2',account2);
 
-    $('#panel2').html("解析中，请稍等&nbsp;&nbsp;<i class='fa fa-spinner fa-pulse'></i>");
+    $('#panel2_1').html("解析中，请稍等&nbsp;&nbsp;<i class='fa fa-spinner fa-pulse'></i>");
     $.ajax({
         url:"/data-parsing/",
         type:'POST',
@@ -116,12 +116,12 @@ $('#dataparsing').click(function () {
         success:function (arg) {
             var err = arg['err'];
             if(err == 0){
-                $('#panel2').html("<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>");
-                $('#panel2').show()
+                $('#panel2_1').html("<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>");
+                $('#panel2_1').show()
             }else if(err == -1){
-                $('#panel2').text(arg['msg']);
-                $('#panel2').addClass('color_red');
-                $('#panel2').show()
+                $('#panel2_1').text(arg['msg']);
+                $('#panel2_1').addClass('color_red');
+                $('#panel2_1').show()
             }
         }
     })
